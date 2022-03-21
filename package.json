@@ -1,0 +1,23 @@
+{
+  "name": "nodeandreact_default",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yogoloper/NodeAndReact_Default.git"
+  },
+  "author": "yogoloper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yogoloper/NodeAndReact_Default/issues"
+  },
+  "homepage": "https://github.com/yogoloper/NodeAndReact_Default#readme",
+  "dependencies": {
+    "express": "^4.17.3"
+  }
+}
