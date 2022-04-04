@@ -13,16 +13,15 @@ import Reducer from './_reducers';
 const createStoreWithMiddleware = applyMiddleware(promiseMiddleware, reduxThunk)(createStore)
 
 ReactDOM.render(
-  <Provider
-      store={createImageBitmap(Reducer, 
+    <Provider
+    store={createStoreWithMiddleware(Reducer,
         window.__REDUX_DEVTOOLS_EXTENSION__ &&
         window.__REDUX_DEVTOOLS_EXTENSION__()
-        )}
+    )}
   >
     <App />
   </Provider>
-  , document.getElementById('root')
-);
+  , document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
